@@ -45,7 +45,7 @@ dependencies {
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 ```
--- Activity:注 需要替换meta-data中的 JPUSH_APPKEY
+-- Activity:注 需要替换meta-data中的 JPUSH_APPKEY 在<category android:name="XXX.XXXX.XXXX" />中替换自己的包名
 ```xml
 <!-- Required SDK核心功能-->
         <activity
@@ -85,7 +85,7 @@ dependencies {
             android:enabled="true" >
             <intent-filter android:priority="1000">
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
-                <category android:name="com.rex.hwong.test" />
+                <category android:name="XXX.XXXX.XXXX" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.USER_PRESENT" />
